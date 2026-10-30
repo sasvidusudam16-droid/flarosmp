@@ -14,6 +14,8 @@ export default function Home() {
   const bttRef = useRef<HTMLButtonElement>(null);
   const [scrolled, setScrolled] = useState(false);
   const [launching, setLaunching] = useState(false);
+  const [year, setYear] = useState(2025);
+  useEffect(() => { setYear(new Date().getFullYear()); }, []);
 
   useEffect(() => {
     const section = joinRef.current;
@@ -391,7 +393,7 @@ export default function Home() {
 
         <div className="footer-bottom">
           <p className="footer-copy">
-            © {new Date().getFullYear()} {SERVER_NAME}. All rights reserved.
+            © {year} {SERVER_NAME}. All rights reserved.
             <span className="footer-copy-sep"> · </span>
             <span className="footer-copy-note">Not affiliated with Mojang or Microsoft.</span>
           </p>
