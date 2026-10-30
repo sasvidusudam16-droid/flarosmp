@@ -1999,15 +1999,6 @@
 .store-heading {
   margin-bottom: 52px;
 }
-.store-eyebrow {
-  font-family: 'Chakra Petch', sans-serif;
-  font-size: 0.7rem;
-  font-weight: 700;
-  letter-spacing: 0.16em;
-  text-transform: uppercase;
-  color: #FF5200;
-  margin: 0 0 10px;
-}
 .store-title {
   font-family: 'Russo One', sans-serif;
   font-size: clamp(1.9rem, 4.5vw, 2.9rem);
@@ -2019,8 +2010,9 @@
 /* Rank grid */
 .ranks-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 1fr 1fr 1.18fr;
   gap: 20px;
+  align-items: start;
   margin-bottom: 72px;
 }
 .rank-card {
@@ -2034,15 +2026,21 @@
   transition: border-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
 }
 .rank-card-featured {
-  border-color: rgba(255,82,0,0.45);
-  background: rgba(255,82,0,0.05);
-  box-shadow: 0 0 48px rgba(255,82,0,0.09);
+  border-color: rgba(255,82,0,0.5);
+  background: linear-gradient(160deg, rgba(255,82,0,0.07) 0%, rgba(255,82,0,0.02) 100%);
+  box-shadow: 0 0 60px rgba(255,82,0,0.12), 0 2px 0 rgba(255,82,0,0.4) inset;
+  padding-top: 40px;
+  padding-bottom: 32px;
 }
 @media (hover: hover) {
   .rank-card:hover {
     border-color: rgba(255,82,0,0.36);
     transform: translateY(-4px);
     box-shadow: 0 12px 40px rgba(0,0,0,0.3);
+  }
+  .rank-card-featured:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 20px 60px rgba(255,82,0,0.18), 0 2px 0 rgba(255,82,0,0.4) inset;
   }
 }
 .rank-badge {
@@ -2308,7 +2306,7 @@
 @media (hover: hover) {
   .footer-ip-btn:hover { border-color: rgba(255,82,0,0.42); }
 }
-.footer-ip-text { display: flex; flex-direction: column; gap: 3px; text-align: left; }
+.footer-ip-text { display: flex; align-items: center; text-align: left; }
 .footer-ip-text small {
   font-family: 'Chakra Petch', sans-serif;
   font-size: 0.6rem;

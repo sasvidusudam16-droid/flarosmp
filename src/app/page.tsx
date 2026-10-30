@@ -217,27 +217,15 @@ export default function Home() {
 
         {/* ambient floating shapes */}
         <div className="htj-shapes" aria-hidden="true">
-          {/* diamonds */}
           <div className="hjs hjs-d1" />
           <div className="hjs hjs-d2" />
-          {/* 4-point sparkle stars */}
           <svg className="hjs hjs-s1" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M16 0L17.8 14.2L32 16L17.8 17.8L16 32L14.2 17.8L0 16L14.2 14.2Z" fill="#FFB040"/>
           </svg>
           <svg className="hjs hjs-s2" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M16 0L17.8 14.2L32 16L17.8 17.8L16 32L14.2 17.8L0 16L14.2 14.2Z" fill="#FF6020"/>
           </svg>
-          <svg className="hjs hjs-s3" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M16 0L17.8 14.2L32 16L17.8 17.8L16 32L14.2 17.8L0 16L14.2 14.2Z" fill="#FFB040"/>
-          </svg>
-          {/* crosses */}
           <div className="hjs hjs-c1" />
-          <div className="hjs hjs-c2" />
-          {/* orb */}
-          <div className="hjs hjs-o1" />
-          {/* rings */}
-          <div className="hjs hjs-r1" />
-          <div className="hjs hjs-r2" />
         </div>
 
         <div className="htj-inner">
@@ -273,7 +261,6 @@ export default function Home() {
       <section id="store" className="store-sec">
         <div className="store-inner">
           <div className="store-heading">
-            <p className="store-eyebrow">Support the server</p>
             <h2 className="store-title">Pick your rank</h2>
           </div>
 
@@ -352,7 +339,6 @@ export default function Home() {
               aria-label={copied ? "IP copied" : `Copy server IP: ${SERVER_IP}`}
             >
               <span className="footer-ip-text">
-                <small>SERVER ADDRESS</small>
                 <strong>{SERVER_IP}</strong>
               </span>
               <span className="footer-ip-icon" aria-hidden="true">

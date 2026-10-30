@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Russo_One, Chakra_Petch } from "next/font/google";
 import "./globals.css";
 
@@ -14,7 +14,11 @@ const chakraPetch = Chakra_Petch({
   weight: ["300", "400", "500", "600", "700"],
 });
 
-const BASE_URL = "https://flarosmp.net";
+const BASE_URL = "https://flarosmp.lumexhosting.xyz";
+
+export const viewport: Viewport = {
+  themeColor: "#ff6b1a",
+};
 
 export const metadata: Metadata = {
   metadataBase: new URL(BASE_URL),
@@ -45,10 +49,10 @@ export const metadata: Metadata = {
   },
   icons: {
     icon: [
-      { url: "/logo.png", type: "image/png" },
+      { url: "/icon.png", type: "image/png", sizes: "512x512" },
     ],
-    apple: "/logo.png",
-    shortcut: "/logo.png",
+    apple: { url: "/icon.png", sizes: "512x512" },
+    shortcut: "/icon.png",
   },
   openGraph: {
     type: "website",
@@ -65,6 +69,7 @@ export const metadata: Metadata = {
         alt: "FlaroSMP Logo",
       },
     ],
+    locale: "en_US",
   },
   twitter: {
     card: "summary_large_image",
@@ -76,7 +81,6 @@ export const metadata: Metadata = {
   alternates: {
     canonical: BASE_URL,
   },
-  themeColor: "#ff6b1a",
 };
 
 export default function RootLayout({
@@ -87,9 +91,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link rel="icon" href="/logo.png" type="image/png" />
-        <link rel="apple-touch-icon" href="/logo.png" />
-        <meta name="theme-color" content="#ff6b1a" />
+        <link rel="icon" href="/icon.png" type="image/png" sizes="512x512" />
+        <link rel="apple-touch-icon" href="/icon.png" />
       </head>
       <body className={`${russoOne.variable} ${chakraPetch.variable}`}>{children}</body>
     </html>
