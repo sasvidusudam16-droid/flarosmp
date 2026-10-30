@@ -1,0 +1,47 @@
+:root {
+  --bg: #07080d;
+  --bg2: #0b0c14;
+  --card: #0f1018;
+  --border: rgba(255, 107, 26, 0.12);
+  --surface: #141520;
+  --orange: #ff6b1a;
+  --orange-mid: #ea580c;
+  --orange-light: #f97316;
+  --orange-deep: #c2410c;
+  --red: #e84040;
+  --yellow: #ffb300;
+  --text: #f0f2ff;
+  --muted: #8890b0;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  /* Lenis handles smooth scrolling; do not set scroll-behavior here */
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-body), "Segoe UI", sans-serif;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+svg {
+  flex-shrink: 0;
+}
