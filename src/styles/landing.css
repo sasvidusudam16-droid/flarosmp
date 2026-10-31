@@ -2375,19 +2375,6 @@
 }
 .footer-copy-sep { margin: 0 6px; }
 .footer-copy-note { color: rgba(232,213,183,0.22); }
-.footer-from {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  font-family: 'Chakra Petch', sans-serif;
-  font-size: 0.72rem;
-  color: rgba(232,213,183,0.38);
-  white-space: nowrap;
-}
-.from-logo {
-  height: 19px;
-  width: auto;
-}
 
 /* Footer responsive */
 @media (max-width: 960px) {
@@ -2533,16 +2520,6 @@
   100% { opacity: 0; transform: scaleY(0); }
 }
 
-/* from+ link */
-.from-link {
-  display: inline-flex;
-  align-items: center;
-  opacity: 0.85;
-  transition: opacity 0.2s ease;
-}
-@media (hover: hover) {
-  .from-link:hover { opacity: 1; }
-}
 
 @media (max-width: 600px) {
   .btt { bottom: 24px; right: 20px; }
