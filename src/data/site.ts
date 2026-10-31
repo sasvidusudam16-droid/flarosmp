@@ -1,6 +1,6 @@
 export const SERVER_NAME = "FlaroSMP";
 export const SERVER_IP = "play.flarosmp.net";
-export const DISCORD_URL = "https://discord.gg/DahmrDUQhT";
+export const DISCORD_URL = "https://discord.gg/yourinvite";
 export const STORE_URL = "https://store.flarosmp.net";
 export const VOTE_URL = "https://minecraft-server-list.com/";
 
@@ -77,7 +77,7 @@ export type Rank = {
 export const RANKS: Rank[] = [
   {
     name: "Flaro+",
-    price: "$4.99",
+    price: "1.99$",
     link: STORE_URL,
     featured: false,
     badge: null,
@@ -90,7 +90,7 @@ export const RANKS: Rank[] = [
   },
   {
     name: "Flaro++",
-    price: "$9.99",
+    price: "4.99$",
     link: STORE_URL,
     featured: false,
     badge: null,
@@ -103,7 +103,7 @@ export const RANKS: Rank[] = [
   },
   {
     name: "Flaro+++",
-    price: "$20.00",
+    price: "6.99$",
     link: STORE_URL,
     featured: true,
     badge: "OCTOBER ONLY",
@@ -128,9 +128,6 @@ export const SHARDS: ShardPackage[] = [
   { amount: 400, base: null, bonus: null, price: "$0.99" },
   { amount: 2500, base: null, bonus: null, price: "$4.99" },
   { amount: 5500, base: 5000, bonus: "+10%", price: "$9.99" },
-  { amount: 12000, base: 10000, bonus: "+20%", price: "$19.99" },
-  { amount: 32000, base: 25000, bonus: "+28%", price: "$49.99" },
-  { amount: 70000, base: 50000, bonus: "+40%", price: "$99.99" },
 ];
 
 export const SOCIALS = [
